@@ -1,0 +1,68 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-container {
+    background-color: #e3fdfd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
+.authen-title {
+  font-size: 30px;
+  padding-bottom: 26px;
+  color: $title-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.authen-text {
+  font-size: 18px;
+  color: $description-text-color;
+  margin-bottom: 10px;
+}
+.box-otp {
+  display: flex;
+  align-items: center;
+}
+.box-authen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.authen-number {
+  width: 80px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: #fff;
+}
+.input-otp {
+  margin-right: 10px;
+}
+.open {
+  animation: upTo 1s ease-in-out 0s;
+}
+@keyframes upTo {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hide {
+  display: none;
+}

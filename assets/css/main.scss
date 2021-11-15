@@ -1,0 +1,75 @@
+@import "./variable";
+@import "./reset";
+@import "./components/landingPage/headerLandingPage";
+@import "./components/landingPage/social";
+@import "./components/landingPage/customer";
+@import "./components/landingPage/dashboard";
+@import "./components/landingPage/subcribe";
+@import "./components/footer/footer";
+@import "./page/login/login";
+@import "./components/header/header";
+@import "./page/login/modalLogin";
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn {
+  padding: 14px 40px;
+  color: #fff8f8;
+  background-color: $pink-color;
+  border-radius: 30px;
+  cursor: pointer;
+  &:hover {
+    background-color: $pink-main;
+    color: white;
+    transition: all 0.3s linear;
+  }
+  &-login {
+    margin-left: 20px;
+    display: block;
+  }
+  &-sub {
+    // display: ;
+    margin-left: 60px;
+  }
+  &-sb-login {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  &-sdt {
+    border: none;
+    border-radius: 10px;
+  }
+}
+.input-box {
+  background-color: #1e292e;
+  border: none;
+  outline: none;
+  min-width: 300px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  display: block;
+  margin-top: 20px;
+}
+.footer-bkg {
+  background-color: $footer-bkg;
+}
+.text-white {
+  color: #fff;
+  font-weight: 400;
+}
+.text-green {
+  color: $green-color;
+}
+.bkg-green {
+  background-color: $green-color;
+}
+.mt-0 {
+  margin-top: 0;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Login</title>
+  </head>
+  <body class="bkg-purple">
+    <header class="header header-pink">
+      <div class="container">
+        <div class="navbar">
+          <a class="navbar-logo" href="./index.html">
+            <img src="./assets/img/logo.png" alt="" class="navbar-logo__img" />
+            <p class="navbar-logo__text text-green">Save Money</p>
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">ABOUT</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">HOW IT WORKS</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">CONTACT</a>
+            </li>
+          </ul>
+          <div class="login-box">
+            <a href="./register.html" class="login-box__register text-green"
+              >Register Now</a
+            >
+            <a href="./login.html" class="btn btn-login bkg-green">LOGIN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="login-content">
+        <div class="login-content__img">
+          <img src="./assets/img/card1.png" alt="" class="login-img" />
+          <h1 class="login-content__title">
+            <span>It’s not about </span>how much money you make,
+            <span>it’s how you much you</span>
+            save it!
+          </h1>
+        </div>
+
+        <form action="#">
+          <p class="login__title">Sign In</p>
+          <p class="login__desc">Sign in and start managing your bank!</p>
+          <div class="login-form">
+            <div class="info-input-box">
+              <input
+                type="text"
+                placeholder="Enter email"
+                style="color: #fff"
+                name="username"
+                class="input-box"
+                id="username"
+              />
+              <input
+                type="password"
+                placeholder="Enter password"
+                style="color: #fff"
+                name="password"
+                class="input-box"
+                id="password"
+              />
+            </div>
+            <div class="remember-box">
+              <div class="checkbox">
+                <input
+                  class="styled-checkbox"
+                  id="styled-checkbox-2"
+                  type="checkbox"
+                />
+                <label for="styled-checkbox-2">Remember me</label>
+              </div>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <button class="btn btn-sb-login" id="btn-login-submit">
+              Login
+            </button>
+            <p class="sign-up-link">
+              Don't have an account? <a href="#">Sign up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer footer-bkg">
+      <div class="container">
+        <div class="footer-content">
+          <ul class="footer-menu">
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">ABOUT</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">HOW IT WORKS</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">CONTACT</a>
+            </li>
+          </ul>
+          <!-- facebook page -->
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmoneysavee&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="340"
+            height="70"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <!-- modal -->
+    <div class="modal hide">
+      <div class="modal-container hide">
+        <h4 class="authen-title">
+          Xác thực hai bước <i class="far fa-times-circle icon-close"></i>
+        </h4>
+        <p class="authen-text">
+          Số điện thoại(sử dụng số điện thoại đăng kí tài khoản)
+        </p>
+        <form action="">
+          <div class="box-otp">
+            <input
+              type="text"
+              required
+              placeholder="Nhập số điện thoại"
+              style="color: #fff"
+              class="input-box mt-0 input-otp"
+            />
+            <button class="btn btn-sdt">Lấy mã OTP</button>
+          </div>
+
+          <div class="box-authen">
+            <input class="authen-number" type="text" required />
+            <input class="authen-number" type="text" required />
+            <input class="authen-number" type="text" required />
+            <input class="authen-number" type="text" required />
+          </div>
+          <button class="btn btn-sdt">Xác nhận</button>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/login.js"></script>
+  </body>
+</html>
