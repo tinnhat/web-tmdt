@@ -5,60 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Document</title>
+    <title>Register</title>
   </head>
   <body class="bkg-purple">
+    <header class="header header-pink">
+      <div class="container">
+        <div class="navbar">
+          <a class="navbar-logo" href="./index.html">
+            <img src="./assets/img/logo.png" alt="" class="navbar-logo__img" />
+            <p class="navbar-logo__text text-green">Save Money</p>
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">ABOUT</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">HOW IT WORKS</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">CONTACT</a>
+            </li>
+          </ul>
+          <div class="login-box">
+            <a href="./register.html" class="login-box__register text-green"
+              >Register Now</a
+            >
+            <a href="./login.html" class="btn btn-login bkg-green">LOGIN</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="container">
       <div class="login-content">
         <div class="login-content__img">
-          <img src="./assets/img/card1.png" alt="" class="login-img" />
+          <img src="./assets/img/group-card.png" alt="" class="register-img" />
           <h1 class="login-content__title">
-            <span>It’s not about </span>how much money you make,
-            <span>it’s how you much you</span>
-            save it!
+            <span>Save money, </span>don’t you want to live A
+            <span>more enjoyable life?</span>
           </h1>
         </div>
-
-        <form action="#">
-          <p class="login__title">Sign In</p>
-          <p class="login__desc">Sign in and start managing your bank!</p>
-          <div class="login-form">
-            <div class="info-input-box">
+        <div class="register-box">
+          <form action="#">
+            <p class="login__title">Register</p>
+            <p class="login__desc text-center">
+              Register and start managing your bank!
+            </p>
+            <div class="flex-box">
+              <input
+                type="email"
+                placeholder="Email"
+                style="color: #fff"
+                class="input-box mr-20"
+                id="email-input"
+                required
+              />
+              <div class="gender-box">
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" />
+                <label for="male" class="male">Male</label>
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="flex-box">
               <input
                 type="text"
-                placeholder="Enter email"
+                placeholder="Password"
                 style="color: #fff"
-                name="username"
+                class="input-box mr-20"
                 required
-                class="input-box"
               />
               <input
-                type="password"
-                placeholder="Enter password"
+                type="text"
+                placeholder="Re-password"
                 style="color: #fff"
-                name="password"
-                required
                 class="input-box"
+                required
               />
             </div>
-            <div class="remember-box">
-              <div class="checkbox">
+            <div class="flex-box">
+              <input
+                type="text"
+                placeholder="Name on Card"
+                style="color: #fff"
+                class="input-box mr-20"
+                required
+              />
+              <div class="date-box">
+                <p class="date-box-text">Date of birth:</p>
                 <input
-                  class="styled-checkbox"
-                  id="styled-checkbox-2"
-                  type="checkbox"
+                  type="date"
+                  placeholder="Date of birth"
+                  style="color: #fff"
+                  class="date-input"
+                  required
                 />
-                <label for="styled-checkbox-2">Remember me</label>
               </div>
-              <a href="#" class="forgot-link">Forgot password?</a>
             </div>
-            <button class="btn btn-sb-login">Login</button>
-            <p class="sign-up-link">
-              Don't have an account? <a href="#">Sign up</a>
+            <div class="flex-box">
+              <input
+                type="text"
+                placeholder="Card Number"
+                style="color: #fff"
+                class="input-box mr-20"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                style="color: #fff"
+                class="input-box"
+                required
+              />
+            </div>
+            <textarea
+              rows="6"
+              placeholder="Adress"
+              class="input-box address-input"
+              style="color: #fff"
+            ></textarea>
+            <button class="btn btn-sb-login" id="btn-login-submit">
+              Register
+            </button>
+            <p class="register-link">
+              Already have account? <a href="./login.html">Login Now</a>
             </p>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
+    <footer class="footer footer-bkg">
+      <div class="container">
+        <div class="footer-content">
+          <ul class="footer-menu">
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">ABOUT</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">HOW IT WORKS</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">CONTACT</a>
+            </li>
+          </ul>
+          <!-- facebook page -->
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmoneysavee&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="340"
+            height="70"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

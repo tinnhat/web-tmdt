@@ -6,7 +6,7 @@ const login = document.querySelector("#btn-login-submit");
 function hideLog() {
   modal.classList.add("hide");
   modalContainer.classList.add("hide");
-  modalContainer.classList.remove("open");
+  // modalContainer.classList.remove("open");
 }
 
 closeBtn.addEventListener("click", hideLog);

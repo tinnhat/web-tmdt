@@ -170,7 +170,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .navbar-logo {
@@ -410,7 +410,7 @@ body {
   width: 70px;
   height: 70px;
   position: absolute;
-  top: calc(($length / 2) * -1);
+  top: -35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -971,6 +971,105 @@ body {
   display: none;
 }
 
+.register-img {
+  width: 450px;
+  height: auto;
+}
+
+.register-box {
+  padding-left: 40px;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-box .date-input {
+  padding: 14px 18px;
+}
+
+.register-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.register-link a {
+  margin-left: 20px;
+  color: #48df99;
+}
+
+.address-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.gender-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.gender-box p {
+  margin-right: 10px;
+}
+
+.gender-box #female,
+.gender-box #male {
+  margin-right: 4px;
+}
+
+.gender-box .male {
+  margin-right: 10px;
+}
+
+#email-input {
+  margin-top: 0;
+}
+
+.date-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.date-box-text {
+  color: #fff;
+  margin-right: 28px;
+}
+
+.date-input {
+  background-color: #1e292e;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  display: block;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -1047,5 +1146,13 @@ body {
 
 .mt-0 {
   margin-top: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mr-20 {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

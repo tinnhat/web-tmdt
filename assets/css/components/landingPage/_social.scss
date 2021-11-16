@@ -34,7 +34,7 @@
   width: $length;
   height: $length;
   position: absolute;
-  top: calc(($length / 2) * -1);
+  top: -35px;
   left: 50%;
   transform: translateX(-50%);
 }

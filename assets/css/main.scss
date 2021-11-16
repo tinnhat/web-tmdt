@@ -9,6 +9,7 @@
 @import "./page/login/login";
 @import "./components/header/header";
 @import "./page/login/modalLogin";
+@import "./page/register/register";
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -72,4 +73,10 @@
 }
 .mt-0 {
   margin-top: 0;
+}
+.text-center {
+  text-align: center;
+}
+.mr-20 {
+  margin-right: 20px;
 }
