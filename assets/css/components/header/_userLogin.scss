@@ -1,0 +1,57 @@
+.user-login {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  &__name {
+    padding-right: 6px;
+  }
+  &__icon {
+    padding-bottom: 6px;
+  }
+  .user-info {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f56a79;
+    width: 200px;
+    height: auto;
+    top: 30px;
+    right: 0;
+    &__link {
+      color: #fff;
+      margin-top: 20px;
+      margin-left: 20px;
+      &:last-child {
+        padding-bottom: 20px;
+      }
+      &:hover {
+        transition: all 0.3s linear;
+        color: $green-color;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    width: 150px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+  }
+  &:hover .user-info {
+    animation: hideToSide 0.3s linear;
+    display: flex;
+  }
+}
+@keyframes hideToSide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

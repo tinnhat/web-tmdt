@@ -43,6 +43,10 @@
   .male {
     margin-right: 10px;
   }
+  .male,
+  .female {
+    cursor: pointer;
+  }
 }
 #email-input {
   margin-top: 0;

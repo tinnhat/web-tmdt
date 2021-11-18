@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Send Money</title>
+  </head>
+  <body>
+    <header class="header header-pink">
+      <div class="container">
+        <div class="navbar">
+          <a class="navbar-logo" href="./index.html">
+            <img src="./assets/img/logo.png" alt="" class="navbar-logo__img" />
+            <p class="navbar-logo__text text-green">Save Money</p>
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">ABOUT</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">HOW IT WORKS</a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="#" class="list-item-link text-white">CONTACT</a>
+            </li>
+          </ul>
+          <div class="user-login">
+            <p class="user-login__name">Nhật Tín</p>
+            <i class="fas fa-sort-down user-login__icon"></i>
+            <div class="user-info">
+              <a href="./account.html" class="user-info__link">My Account</a>
+              <a href="./profit.html" class="user-info__link">Check Profit</a>
+              <a href="#" class="user-info__link">Sign Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner-send">
+      <div class="container">
+        <div class="send-contact">
+          <h1 class="send-contact__title">
+            <span
+              >Look after the pennies
+              <span> and the pounds </span>
+              <span> will look after </span>
+              themselves</span
+            >
+          </h1>
+          <div class="send-box">
+            <p class="send-box__title">How much do you want ?</p>
+            <form action="">
+              <div>
+                <label for="name"> Name </label>
+                <input type="text" id="name" class="input-sendMoney" />
+              </div>
+              <div>
+                <label for="money"> Amount </label>
+                <input type="text" id="money" class="input-sendMoney" />
+              </div>
+              <p class="dropdown-title">How long for:</p>
+              <div class="dropdown" id="lightdropdown">
+                <div class="dropdown-select">
+                  <span class="dropdown-selected">Option Save</span>
+                  <i class="fa fa-angle-down dropdown-caret"></i>
+                </div>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item" data-value="1 Month">1 Month</li>
+                  <li class="dropdown-item" data-value="3 Month">3 Months</li>
+                  <li class="dropdown-item" data-value="6 Month">6 Months</li>
+                  <li class="dropdown-item" data-value="12 Month">12 Months</li>
+                  <li class="dropdown-item" data-value="Unlimited deposit">
+                    Unlimited deposit
+                  </li>
+                </ul>
+              </div>
+              <input
+                type="submit"
+                name=""
+                id=""
+                class="btn-send"
+                value="Confirm"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="send-content">
+      <!-- <img
+        src="./assets/img/solutions-business-bg.png"
+        alt=""
+        class="send-content__bkg"
+      /> -->
+      <div class="container">
+        <div class="send-content-flex">
+          <div class="send-content-box">
+            <img
+              src="./assets/img/checking.png"
+              alt=""
+              class="send-content-box__img"
+            />
+            <h4 class="send-content-box__title">Checking Account</h4>
+            <p class="send-content-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              quod enim dignissimos error quasi quis iste officiis inventore
+              blanditiis quae pariatur quas animi aut assumenda incidunt saepe
+              alias, quisquam quos.
+            </p>
+          </div>
+          <div class="send-content-box">
+            <img
+              src="./assets/img/savings.png"
+              alt=""
+              class="send-content-box__img"
+            />
+            <h4 class="send-content-box__title">Saving Money</h4>
+            <p class="send-content-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              quod enim dignissimos error quasi quis iste officiis inventore
+              blanditiis quae pariatur quas animi aut assumenda incidunt saepe
+              alias, quisquam quos.
+            </p>
+          </div>
+          <div class="send-content-box">
+            <img
+              src="./assets/img/business.png"
+              alt=""
+              class="send-content-box__img"
+            />
+            <h4 class="send-content-box__title">More And More</h4>
+            <p class="send-content-box__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              quod enim dignissimos error quasi quis iste officiis inventore
+              blanditiis quae pariatur quas animi aut assumenda incidunt saepe
+              alias, quisquam quos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-bkg">
+      <div class="container">
+        <div class="footer-content">
+          <ul class="footer-menu">
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">ABOUT</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">HOW IT WORKS</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-item__link">CONTACT</a>
+            </li>
+          </ul>
+          <!-- facebook page -->
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmoneysavee&tabs=timeline&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="340"
+            height="70"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/sendMoney.js"></script>
+  </body>
+</html>

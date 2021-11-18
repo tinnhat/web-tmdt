@@ -7,9 +7,12 @@
 @import "./components/landingPage/subcribe";
 @import "./components/footer/footer";
 @import "./page/login/login";
+@import "./components/header/userLogin";
 @import "./components/header/header";
 @import "./page/login/modalLogin";
 @import "./page/register/register";
+@import "./page/error/error";
+@import "./page/sendMoney/sendMoney";
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -25,10 +28,10 @@
   background-color: $pink-color;
   border-radius: 30px;
   cursor: pointer;
+  transition: all 0.3s linear;
   &:hover {
     background-color: $pink-main;
     color: white;
-    transition: all 0.3s linear;
   }
   &-login {
     margin-left: 20px;
@@ -47,6 +50,23 @@
     border: none;
     border-radius: 10px;
   }
+  &-back {
+    background-color: $green-color;
+    margin-right: 10px;
+    &:hover {
+      background-color: #2fd88a;
+    }
+  }
+  &-send {
+    cursor: pointer;
+    padding: 16px 40px;
+    background-color: $green-color;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+  }
 }
 .input-box {
   background-color: #1e292e;
@@ -60,6 +80,9 @@
 }
 .footer-bkg {
   background-color: $footer-bkg;
+}
+.text-pink {
+  color: $pink-color;
 }
 .text-white {
   color: #fff;
