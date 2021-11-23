@@ -14,7 +14,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #f56a79;
+    background-color: #f05454;
     width: 200px;
     height: auto;
     top: 30px;
@@ -23,6 +23,7 @@
       color: #fff;
       margin-top: 20px;
       margin-left: 20px;
+      font-weight: 400;
       &:last-child {
         padding-bottom: 20px;
       }

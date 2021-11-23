@@ -13,6 +13,8 @@
 @import "./page/register/register";
 @import "./page/error/error";
 @import "./page/sendMoney/sendMoney";
+@import "./page/account/account";
+@import "./page/profit/profit";
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -67,6 +69,17 @@
     border-radius: 10px;
     font-weight: bold;
   }
+  &-change {
+    text-align: center;
+    cursor: pointer;
+    padding: 16px 40px;
+    background-color: $green-color;
+    color: white;
+    margin-top: 20px;
+
+    border-radius: 20px;
+    font-weight: bold;
+  }
 }
 .input-box {
   background-color: #1e292e;
@@ -102,4 +115,7 @@
 }
 .mr-20 {
   margin-right: 20px;
+}
+.show {
+  display: block;
 }
